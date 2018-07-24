@@ -1,0 +1,19 @@
+{
+  "name": "pleasesend",
+  "version": "1.0.0",
+  "description": "API to send an email from the front end",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joefearnley/pleasesend.git"
+  },
+  "author": "Joe Fearnley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joefearnley/pleasesend/issues"
+  },
+  "homepage": "https://github.com/joefearnley/pleasesend#readme"
+}
