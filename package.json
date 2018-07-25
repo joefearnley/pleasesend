@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/joefearnley/pleasesend/issues"
   },
-  "homepage": "https://github.com/joefearnley/pleasesend#readme"
+  "homepage": "https://github.com/joefearnley/pleasesend#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mailgun-js": "^0.20.0"
+  }
 }
