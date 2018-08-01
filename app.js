@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
   const host = req.get('host');
-  console.log(allowedDomains)
+  console.log(allowedDomains);
 
   if (!allowedDomains.includes(host)) {
     res.status(422).send('Request from invalid domain');
