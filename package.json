@@ -4,6 +4,7 @@
   "description": "API to send an email from the front end",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "mailgun-js": "^0.20.0"
   },
   "devDependencies": {
-    "jest": "^23.5.0"
+    "jest": "^23.5.0",
+    "supertest": "^3.1.0"
   }
 }

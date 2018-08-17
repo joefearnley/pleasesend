@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   }
 
   let mailer = new Mailer();
-  mailer.send(req.query.email, process.env.MAILGUN_TO, req.query.subject, html: req.query.body);
+  mailer.send(req.query.email, process.env.MAILGUN_TO, req.query.subject, req.query.body);
 });
 
 const port = process.env.PORT || 5000;
