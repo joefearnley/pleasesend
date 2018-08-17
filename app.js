@@ -2,6 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const Mailgun = require('mailgun-js');
+
+
 const allowedDomains = process.env.ALLOWED_DOMAINS.split(',');
 
 app.use((req, res, next) => {
