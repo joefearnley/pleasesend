@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const mailer = require('./mailer');
+const Mailer = require('./mailer');
 const app = express();
 
 const allowedDomains = process.env.ALLOWED_DOMAINS.split(',');

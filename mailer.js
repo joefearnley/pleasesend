@@ -17,7 +17,7 @@ module.exports = class Mailer {
     mailgun.messages().send(data).then(function (data) {
         console.log(data);
       }, function (err) {
-        console.log('Got an error trying to send email: ', error);
+        console.log('Got an error trying to send email: ', err);
       });
   }
 }
