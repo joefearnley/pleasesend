@@ -13,7 +13,3 @@ describe('GET /', () => {
   });
 });
 
-test('It should return a 200', async () => {
-    let response = await request.get('/');
-    expect(response.status).toBe(200);
-});
