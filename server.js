@@ -15,21 +15,29 @@ app.use((req, res, next) => {
 app.post('/', (req, res) => {
   const host = req.get('host');
 
+  console.log(host);
+
   if (!allowedDomains.includes(host)) {
     res.status(422).send('Request from invalid domain');
     return;
   }
 
+  console.log(req.query);
+
   const data = { 
-    from: req.query.from, 
+    from: req.query.from,
     to: process.env.MAILGUN_TO, 
     subject: req.query.subject, 
     html: req.query.body 
   };
 
   mailgun.messages().send(data).then(function (data) {
-      res.status(500).json({ message: data });
+      console.log('message sent...');
+      console.log(data);
+      res.status(200).json({ message: data });
     }, function (err) {
+      console.log('Error!!!');
+      console.log(err);
       res.status(500).json({ error: err });
     });
 });
