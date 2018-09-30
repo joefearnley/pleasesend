@@ -4,7 +4,7 @@
   "description": "API to send an email from the front end",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
